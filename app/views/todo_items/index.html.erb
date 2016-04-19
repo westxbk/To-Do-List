@@ -2,7 +2,7 @@
 
 <h1>My ToDo List</h1>
 
-<table>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Description</th>
@@ -14,7 +14,7 @@
     <% @todo_items.each do |todo_item| %>
       <tr>
         <td><%= todo_item.description %></td>
-        <td><%= link_to 'Show', todo_item %></td>
+        <td><%= link_to 'Show', todo_item, class: "btn btn-default" %></td>
         <td><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td>
         <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
