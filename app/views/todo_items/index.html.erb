@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
-<%= image_tag("todo.png", :alt => "todo") %>
-<h1>My ToDo List</h1>
+<%= image_tag("todo.png", :alt => "todo", class: "todopic") %>
+<h1 class="top_header">My To Do List</h1>
 
 <table class="table table-bordered">
   <thead>
@@ -15,13 +15,14 @@
       <tr>
         <td><%= todo_item.description %></td>
         <td><%= link_to 'Show', todo_item, class: "btn btn-default" %></td>
-        <td><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td>
-        <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_todo_item_path(todo_item), class: "btn btn-default" %></td>
+        <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Todo item', new_todo_item_path %>
+<p class="new-item">
+<%= link_to 'New To Do Item',  new_todo_item_path %>
+</p>

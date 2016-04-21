@@ -4,5 +4,27 @@
 */
 
 th {
-  color: green;
+  color: #2B78C2;
+  text-align: center;
+}
+
+.todopic {
+  margin: 0 350px 0 400px;
+}
+
+.top_header {
+  color: #3B4552;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  color: #3B4552;
+}
+
+.new-item {
+  text-align: center;
+  margin-bottom: 100px;
+  color: #3B4552;
 }
